@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+    <form action="/" method="GET" id="form">
+        <h1 class="title">Criar uma nova conta</h1>
+        <div class="row">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Escreva seu nome">
+            <small>Mensagem de erro vem aqui</small>
+        </div>
+        <div class="row">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+            <small>Mensagem de erro vem aqui</small>
+        </div>
+        <div class="row">
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Insira sua senha">
+            <small>Mensagem de erro vem aqui</small>
+        </div>
+        <div class="row">
+            <label for="confirm-password">Confirme a Senha</label>
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirme sua senha">
+            <small>Mensagem de erro vem aqui</small>
+        </div>
+        <div class="row">
+            <label for="cep">CEP:</label>
+            <input type="cep" name="cep" id="cep" placeholder="CEP">
+            <small>Mensagem de erro vem aqui</small>
+        </div>
+        <button type="submit" id="btn">Cadastrar</button>
+        <div class="tNc">
+            <input type="checkbox" name="terms" id="terms" required>
+            <label for="terms">Eu li e concordo com os termos do usuário</label>
+        </div>
+    </form>
+
+    <script src="./app.js" type="text/javascript"></script>
+</body>
+</html>
